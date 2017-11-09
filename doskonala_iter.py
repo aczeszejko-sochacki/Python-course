@@ -55,5 +55,5 @@ if __name__ == "__main__":
     y.append(tk - tp)
 
     plt.scatter(x, y)
-    plt.show()
     plt.savefig("czasy.png")
+    plt.show()
