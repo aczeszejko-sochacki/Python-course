@@ -1,2 +1,2 @@
 # Python
-Python files
+Python course on University of Wrocław
