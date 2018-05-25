@@ -1,0 +1,79 @@
+<Main>
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: "background.png"
+
+    rows: 4
+    padding: 10
+    spacing: 10
+
+    Label:
+        text: 'Clasificator KNN'
+        font_size: 30
+        bold: True
+        color: 1, 0.5, 1, 0.7
+
+    BoxLayout:
+        size_hint_y: None
+        height: 500
+
+        Image:
+            id: plot
+            allow_strech: True
+            keep_ratio: False
+            keep_ratio: True
+            source: 'plot.png'
+
+    BoxLayout:
+        size_hint_y: None
+        height: 100
+        spacing: 10
+        padding: 10
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Sepal length'
+            TextInput:
+                id: pl
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Sepal width'
+            TextInput:
+                id: pw
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Petal length'
+            TextInput:
+                id: sl
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Petal width'
+            TextInput:
+                id: sw
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Neighbours'
+            TextInput:
+                id: ngbs
+
+        Button:
+            text: 'check!'
+            on_press: root.set_clasificated(pl.text, pw.text, sl.text, sw.text, ngbs.text)
+            size_hint_y: None
+            height: 40
+
+    Label:
+        id: comm
+        height: 50
+        text: 'Please type parameters'
