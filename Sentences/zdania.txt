@@ -1,0 +1,7 @@
+    zaprogramujiterator,któryprzetwarzastrumieńtekstowyizwraca
+kolejnezdania(stringi)ztegostrumienia Zaprogramujfunkcjękorekta(zdanie)
+którasprawdza,czyzdaniezaczynasięwielkąliterąikończysiękropką,orazczy
+pokropcejestjakiśbiałyznak,ajakowynikzwracaskorygowanezdanie.
+ Jakoprezentacjędziałaniaprogramuutwórzkolekcjęskorygowanychzdań,np.
+korzystajączmap(wwersji3.*)lubanalogicznejfunkcjizpakietuitertools
+
